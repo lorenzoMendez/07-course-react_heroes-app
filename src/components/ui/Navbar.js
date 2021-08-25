@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
 const Navbar = () => {
+
     return (
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
             
@@ -19,19 +20,18 @@ const Navbar = () => {
                         activeClassName="active"
                         className="nav-item nav-link" 
                         exact
-                        to="/marvel"
-                    >
-                        Marvel
-                    </NavLink>
+                        to="/marvel">Marvel</NavLink>
 
                     <NavLink 
                         activeClassName="active"
                         className="nav-item nav-link" 
                         exact
-                        to="/dc"
-                    >
-                        DC
-                    </NavLink>
+                        to="/dc">DC</NavLink>
+                    <NavLink 
+                        activeClassName="active"
+                        className="nav-item nav-link" 
+                        exact
+                        to="/search">Search</NavLink>
                 </div>
             </div>
 
@@ -41,10 +41,7 @@ const Navbar = () => {
                         activeClassName="active"
                         className="nav-item nav-link" 
                         exact
-                        to="/login"
-                    >
-                        Logout
-                    </NavLink>
+                        to="/login">Logout</NavLink>
                 </ul>
             </div>
         </nav>
